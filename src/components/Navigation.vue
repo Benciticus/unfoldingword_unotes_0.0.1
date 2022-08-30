@@ -6,16 +6,16 @@
       <h1>uNotes</h1>
     </div>
     <ul v-show="!mobile" class="navigation">
-      <li @click="goto('1')" class="link">Gen 1</li>
-      <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
+      <!--<li @click="goto('1')" class="link">Gen 1</li>
+      <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>-->
     </ul>
     <div class="icon">
       <i @click="toggleMobileNav" v-show="mobile" class="far fa-bars" :class="{'icon-active':mobileNav}"></i>
     </div>
     <transition name="mobile-nav">
       <ul v-show="mobileNav" class="dropdown-nav">
-        <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
-        <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
+        <!--<li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
+        <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>-->
       </ul>
     </transition>
   </nav>
