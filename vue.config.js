@@ -14,7 +14,11 @@ module.exports = defineConfig({
       title: 'uNotes'
     }
   },  
-  //publicPath: 'unfoldingword_unotes_0.0.1'
+  publicPath: process.env.NODE_ENV === 'production'    
+    ? '/hello-world/'    
+    : '/'
+  //publicPath: 'unfoldingword_unotes_0.0.1',
+  
 })
 
 // module.exports = {
